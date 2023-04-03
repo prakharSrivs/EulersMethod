@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <title>Eulers</title>
+</head>
+<body style="background-color: rgb(35, 35, 35);color: white;">
+
+        <div class="container col-4 mx-auto" id="con">
+            <h1 class="text-center my-4">Eulers Method</h1>
+            <div id="answer" >
+              <table class="table table-striped table-dark d-none">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">xn</th>
+                    <th scope="col">yn</th>
+                    <th scope="col">f(xn,yn)</th>
+                    <th scope="col">yn+1</th>
+                    <th scope="col">xn+1</th>
+                    <th scope="col">f(xn+1,yn+1)</th>
+                    <th scope="col">yn+1</th>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+            <form id="variablesForm" >
+                <div class="form-group">
+                  <label for="valueOfH">Value of H</label>
+                  <input type="text" name="h" class="form-control" id="valueOfH" aria-describedby="emailHelp" placeholder="0.0">
+                  <small id="emailHelp" class="form-text text-muted"></small>
+                </div>
+                <div class="form-group">
+                    <label for="expression">Expression</label>
+                    <input type="text" name="exp" class="form-control" id="expression" aria-describedby="emailHelp" placeholder="x*y+3">
+                    <small id="emailHelp" class="form-text text-muted"></small>
+                  </div>
+                  <div class="form-group">
+                    <label for="ValueOfX0">Value of x0</label>
+                    <input type="number" name="x0" class="form-control" id="ValueOfX0" aria-describedby="emailHelp" placeholder="0">
+                    <small id="emailHelp" class="form-text text-muted"></small>
+                  </div>
+                  <div class="form-group">
+                    <label for="ValueOfY0">Value of Y0</label>
+                    <input type="number" name="y0" class="form-control" id="ValueOfY0" aria-describedby="emailHelp" placeholder="0.0">
+                    <small id="emailHelp" class="form-text text-muted"></small>
+                  </div>
+                  <div class="form-group">
+                    <label for="numberOfSteps">Number of Steps</label>
+                    <input type="number" name="n" class="form-control" id="numberOfSteps" aria-describedby="emailHelp" placeholder="0.0">
+                    <small id="emailHelp" class="form-text text-muted"></small>
+                  </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+        </div>
+</body>
+<script src="./script.js"></script>
+</html>
