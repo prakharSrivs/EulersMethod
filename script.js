@@ -135,7 +135,8 @@ element.addEventListener("submit", (event) => {
     let y=parseFloat(event.target.y0.value);
     let n=parseInt(event.target.n.value);
     con.classList.remove("col-4")
-    con.classList.add("col-12")
+    con.classList.remove("col-sm-4")
+    con.classList.remove("container")
     con.classList.remove("d-none")
     element.style.display="none";
     result.style.display="block";
